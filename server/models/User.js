@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema(
   {
     firstName: {
-      type: String, // it is type string
-      required: true, // it is required
-      min: 2, // must have a minimum of two values
-      max: 50, // maximum of 50 values
+      type: String,
+      required: true,
+      min: 2,
+      max: 50,
     },
     lastName: {
       type: String,
@@ -33,11 +33,8 @@ const UserSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
-	points: {
-		type: Number,
-		default: 0,
-	},
     location: String,
+    occupation: String,
     viewedProfile: Number,
     impressions: Number,
   },
